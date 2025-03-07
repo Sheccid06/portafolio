@@ -29,7 +29,7 @@ tr th{
 	background-color: #4a6989;
 	color: white;
 }
-/*tr:hover{
-	background-color: ;
-	color: ;
-}*/
+tr:hover{
+	background-color: #4a6989;
+	color: white;
+}
