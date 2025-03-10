@@ -1,0 +1,30 @@
+ul{
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
+	margin: auto;
+	display: inline-flex;
+}
+li{
+	width: 100%;
+}
+li a{
+	display: block;
+	/*para que este en bloque quitar el width*/
+	float: left;
+	width: 100%;
+	background-color: #D69ADE;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: arial, verdana;
+}
+li a:hover{
+	background-color: #AA60C8;
+	color: white;
+}
+/*li a.activo{
+	background-color: #AA60C8;
+	color: white;
+}*/
+
