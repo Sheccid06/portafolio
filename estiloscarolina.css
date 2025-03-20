@@ -1,0 +1,179 @@
+body{
+
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-size: 300%;
+	text-align: center;
+	color: black;
+
+}
+h3{
+	color: black;
+	font-size: 200%;
+
+}
+p{
+	font-size: 200%;
+	font-family: arial;
+}
+section{
+	padding: 07%;
+}
+footer{
+	background-color: #B31312;
+	height: auto;
+	text-align: center;
+	font-family: fantasy;
+}
+.aheader{
+	background-color: #000957;
+	color: white;
+	/*height: 25em;*/
+	width: 100%;
+	padding-top:10%;
+	padding-bottom: 10%;
+	text-align: center;
+	font-size: 600%;
+	letter-spacing: 4px;
+	font-weight: 540;
+	box-shadow: inset 0px 100px 100px 30px black;
+
+}
+.atable{
+	background-color: #B31312;
+	width: 100%;
+	padding: 25px;
+	height: 90vh;
+	margin-bottom: 50px;
+}
+
+.atd{
+	
+	width: 40%;
+	height: 50%;
+	padding: 0;
+	object-position: center;
+	text-align: center;
+
+
+}
+.aimg{
+	width: 100%;
+	height: 100%;
+	filter: grayscale(100%);
+	transition: width 1s, height 1s;
+	transition-timing-function: ease-out;
+	
+
+}
+.aimg:hover{
+	width: 95%;
+	height: 95%;
+	filter: grayscale(0%);
+
+
+}
+.textos{
+	position: relative;
+}
+.snav1{
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.snavul1{
+	margin: 0;
+	display: flex;
+	padding: 0;
+}	
+.snavli1{
+	width: 100%;
+	/*height: 60px;*/
+	background-color: black;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	list-style-type: none;
+}
+
+.snavli1:hover{
+	background-color: white;
+	.sa1{
+	color: black;
+	}
+}
+
+.sa1{
+	color: white;
+	text-decoration: none;
+	font-size: 140%;
+	font-weight: bolder;
+	font-family: arial;
+
+}
+.sa12{
+	color: white;
+	text-decoration: none;
+	font-size: 140%;
+	font-weight: bolder;
+	font-family: arial;
+
+.sa12:hover{
+	.snav2{
+
+	}
+}
+
+.logo{
+	max-height: 100%;
+	max-width: 21%;
+	object-fit: contain;
+}
+div.sdivp{
+	width: 100%;
+	padding: 0;
+	background-color: #000957;
+}
+div.sdiv{
+	width: 50%;
+	padding: 0;
+	background-color: #000957;
+	color: white;
+}
+.snav2{
+	visibility: hidden;
+}
+.vertical{
+	visibility: hidden;
+}
+/*table.dos{
+	background-color: #000957;
+	width: 100%;
+	margin: auto;
+	color: white;
+}
+tr.dos{
+	background-color: #000957;
+	text-decoration: none;
+	font-family: arial, verdana;
+	margin: auto;
+	height: 100%;
+	color: white;
+}
+td.dos{
+	background-color: #000957;
+	text-decoration: none;
+	font-family: arial, verdana;
+	margin: auto;
+	margin-left: 30%;
+	color: white;
+}
+td a.dos{
+	background-color: #000957;
+	text-decoration: none;
+	font-family: arial, verdana;
+	margin-left: 70%;
+	color: white;
+}*/
