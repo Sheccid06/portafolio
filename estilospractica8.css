@@ -1,0 +1,47 @@
+.contenedor{
+	position: relative;
+	background: gray;
+	height: 100px;
+}
+.caja1{
+	position: relative;
+	background: orange;
+	height: 50px;
+	left: 10px;
+}
+.caja2{
+	position: absolute;
+	background: pink;
+	height: 150px;
+	width: 150px;
+	left: 70px;
+	top: 25px;
+	z-index: -1;
+}
+.caja3{
+	position: absolute;
+	background: lightblue;
+	width: 125px;
+	height: 125px;
+	right: 100px;
+	top: 40px;
+	z-index: 2;
+}
+.caja4{
+	position: absolute;
+	height: 75px;
+	width: 75px;
+	background: yellow;
+	top: 55px;
+	right: 55px;
+	z-index: 3;
+}
+.caja5{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	border: 3px solid black;
+	width: 30000px;
+	height: 100px;
+	z-index: 5;
+}
