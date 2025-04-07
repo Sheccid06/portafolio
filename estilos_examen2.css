@@ -1,0 +1,51 @@
+h1{
+	text-align: center;
+	color: black;
+}
+h2{
+	text-align: center;
+	color: black;
+}
+.caja1{
+	border: 5px solid #BE5985;
+	border-radius: 6px;
+	background-color: #BE5985;
+	text-align: center;
+	width: 15%;
+	margin: auto;
+	color: white;
+	font-size: 1.5em;
+	padding: 1%;
+}
+.caja1:hover{
+	border: 5px solid #EC7FA9;
+	border-radius: 6px;
+	background-color: #EC7FA9;
+	text-align: center;
+	width: 15%;
+	margin: auto;
+	color: black;
+	font-size: 1.5em;
+	padding: 1%;
+}
+#caja1:hover + #contenedor {
+    visibility: hidden;
+}
+.contenedor{
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+	width: 80%;
+	padding: 5%;
+	margin: auto;
+}
+.hija{
+	border: 7px solid #BE5985;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column; 
+	width: 20%;
+}
+img{
+	width: 100%;
+}
