@@ -5,68 +5,82 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Práctica 9</title>
 	<style type="text/css">
-		.tit1{
-			background-color: black;
+		.container{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			width: 95%;
+			align-items: center;
+			background: #E1EEBC;
+			border: solid #328E6E 5px;
+			border-radius: 5px;
+			padding: 10px;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.cajita{
+			background: #90C67C;
+			border: solid #67AE6E 5px;
+			border-radius: 5px;
 			color: white;
-			text-align: center;
-			width: 50%;
-			height: 40px;
-			font-size: 120%;
-			margin: auto;
-			border-radius: 4vh;
-			padding: 10px;
 		}
-		.box1{
-			border-radius: 4vh;
-			border: solid red 5px;
+		.title1{
+			background: #222222;
+			border: solid #000000 5px;
+			border-radius: 5px;
+			color: white;
+			font-size: 1.5em;
+			margin-top: 10px;
+			margin-bottom: 30px;
 			margin: auto;
-			padding: 10px;
-			height: 40vh;
-			width: 100vw;
+			width: 70%;
 		}
-		.box2{
-			border-radius: 4vh;
-			border: solid blue 5px;
+		.title1:hover{
+			background: #000000;
+			border: solid #222222 5px;
+			border-radius: 5px;
+			color: white;
+			font-size: 1.5em;
+			margin-top: 10px;
+			margin-bottom: 30px;
 			margin: auto;
-			padding: 10px;
-			height: 30%;
-			width: 100%;
+			width: 70%;
 		}
-		.box3{
-			border-radius: 4vh;
-			border: solid pink 5px;
+		.title2{
+			background: #222222;
+			border: solid #000000 5px;
+			border-radius: 5px;
+			color: white;
+			font-size: 1em;
 			margin: auto;
-			padding: 10px;
-			height: 80px;
-			width: 1000px;
-		}
-		.cont{
-			
+			width: 40%;
 		}
 	</style>
 </head>
 <body>
-	<div class="cont">
-		<h1>Infografía:</h1>
+	<div class="title1">Unidades de medida</br>Sheccid Itzel Cárdenas Hernández - 185813</div>
+	<div class="title2">Unidades de medida absolutas</div>
+	<div class="container">
+		<div class="cajita" style="width: 1.5in; height: 1.5in;">1.5in x 1.5in</div>
+		<div class="cajita" style="width: 3cm; height: 3cm;">3cm x 3cm</div>
+		<div class="cajita" style="width: 25mm; height: 25mm;">25mm x 25mm</div>
+		<div class="cajita" style="width: 50pt; height: 50pt;">50pt x 50pt</div>
+		<div class="cajita" style="width: 100q; height: 100q;">100q x 100q</div>
+		<div class="cajita" style="width: 10pc; height: 10pc;">10pc x 10pc</div>
+		<div class="cajita" style="width: 85px; height: 85px;">85px x 85px</div>
+	</div>
+	<div class="title2">Unidades de medida relativas</div>
+	<div class="container">
+		<div class="cajita" style="width: 10em; height: 10em;">10em x 10em</div>
+		<div class="cajita" style="width: 10ex; height: 10ex;">10ex x 10ex</div>
+		<div class="cajita" style="width: 10ch; height: 10ch;">10ch x 10ch</div>
+		<div class="cajita" style="width: 30%; height: 50%;">30% x 50%</div>
+		<div class="cajita" style="width: 10rem; height: 10rem;">10rem x 10rem</div>
+		<div class="cajita" style="width: 10vw; height: 60wh;">10vw x 60vh</div>
+		<div class="cajita" style="width: 10vmin; height:10vmin ;">10vmin x 10vmin</div>
+		<div class="cajita" style="width: 10vmax; height:10vmax ;">10vmax x 10vmax</div>
+	</div>
 
-	</div>
-	<div class="tit1">
-		Cajas con medidas relativas:
-	</div>
-	<div class="box1">
-		heigth: 40vh<br>
-		width: 100vw
-	</div>
-	<div class="box2">
-		width: 100%<br>
-		heigth: 30%
-	</div>
-	<div class="tit1">
-		Cajas con medidas Absolutas:
-	</div>
-	<div class="box3">
-		width: 1000px<br>
-		heigth:80px<br>
-	</div>
 </body>
 </html>
