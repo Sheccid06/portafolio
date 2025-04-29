@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos_practica1_parcial3.css">
+	<script type="text/javascript" src="operaciones.js"></script>
+	<title>Operaciones con JavaScript</title>
+</head>
+<body>
+	<h1>Operaciones</h1>
+	
+	<form>
+	<fieldset>
+		<legend>Hacer una operación</legend>
+		<label for="num1">Escribe un número</label></br>
+		<input type="text" name="num1" id="num1" placeholder="Escribe un número"></br>
+		<label for="num2">Escribe un número</label></br>
+		<input type="text" name="num2" id="num2" placeholder="Escribe un número"></br></br>
+		<input type="button" name="suma" id="suma" value="Suma" onclick="	sumar()">
+		<input type="button" name="res" id="res" value="Resta" onclick="restar()">
+		<input type="button" name="mul" id="mul" value="Multiplicación" onclick="multiplicar()">
+		<input type="button" name="div" id="div" value="División" onclick="dividir()">
+	</fieldset>
+	</form>
+	<h2>El resultado es:</h2>
+	<p name="resultado" id="resultado"></p>
+
+</body>
+</html>
+<!--<label for=""></label></br>
+<input type="" name="" id="" placeholder=""></br>-->

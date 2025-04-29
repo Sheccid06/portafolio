@@ -1,0 +1,30 @@
+h1{
+	color: black;
+	text-align: center;
+}
+label{
+	color: #3D0301;
+	font-size: 1em;
+}
+input{
+	border: 2px solid #3D0301;
+	border-radius: 8px;
+	padding: 14px;
+	margin: 6px;
+	/*background-color: lightgray;*/
+}
+fieldset{
+	width: 80%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 14px;
+	margin: 6px;
+	color: black;
+	/*background-color: #ffd9f9;*/
+}
+legend{
+	font-size: 1.5em;
+	color:black;
+
+}
