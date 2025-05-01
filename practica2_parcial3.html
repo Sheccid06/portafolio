@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="formulario.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos_practica2_parcial3.css">
+	<title>Obtener datos desde formulario con JavaScript</title>
+</head>
+<body>
+	<div class="titulo">
+	<h1> Registro de usuario </h1>
+	</div>
+	<div class="formu">
+	<form name="formulario"> 
+		<label for="user">Nombre de usuario:</label></br>
+		<input type="text" name="user" id="user" placeholder="Usuario"></br>
+		<label for="pass">Ingresa tu contraseña</label></br>
+		<input type="password" name="pass" id="pass"></br>
+		<label for="carrera">Selecciona tu carrera:</label></br>
+		<select name="carrera" id="carrera">
+			<option value="ITI ">Ing. Tec. Información</option></br>
+			<option value="ITEM ">Ing. Telemática</option>
+		</select></br>
+		<label for="genero">Cuál es tu genero?</label></br>
+		<input type="radio" name="genero" id="genero" value="Femenino"><label>F</label>
+		<input type="radio" name="genero" id="genero" value="Masculino"><label>M</label></br>
+		<input type="checkbox" name="privacidad" id="privacidad">
+		<label for="privacidad">Acepto los téminos y condiciones de uso y privacidad</label></br></br>
+		<input type="button" name="envio" id="envio" value="Obtener datos" onclick="leer()"></br></br>
+	</form>
+	</div>
+	<div class="contenedor">
+	<h1>Datos obtenidos</h1>
+	<div id="datos">
+		
+	</div>
+	</div>
+</body>
+</html>

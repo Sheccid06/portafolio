@@ -1,0 +1,65 @@
+.contenedor{
+	width: 70%;
+	margin: auto;
+	border: solid #7E5CAD 2px;
+	border-radius: 15px;
+	background-color: #E5D4FF;
+}
+label{
+	font-size: 1em;
+	font-family: Georgia, serif;
+}
+.titulo{
+	background: linear-gradient(#C5BAFF, #C4D9FF);
+	width: fit-content;
+	margin: auto;
+	border: solid white 2px;
+	border-radius: 15px;
+}
+h1{
+	color: #7E5CAD;
+}
+.formu{
+	border: solid #7E5CAD 2px;
+	width: 50%;
+	margin: auto;
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+input[type=text]{
+	width: 98%;
+	border: solid #C5BAFF 2px;
+	border-radius: 6px;
+	background: linear-gradient(#C5BAFF, #C4D9FF);
+}
+input[type=password]{
+	width: 98%;
+	border: solid #C5BAFF 2px;
+	border-radius: 6px;
+	background: linear-gradient(#C5BAFF, #C4D9FF);
+}
+input[type=checkbox] {
+	accent-color: #C5BAFF;
+ 	color: #C5BAFF;
+}
+input[type=radio] {
+	accent-color: #C5BAFF;
+ 	color: #C5BAFF;
+}
+input[type=button] {
+	width: 30%;
+	margin-left: 35%;
+	border: solid white 2px;
+	border-radius: 6px;
+	background-color: #3D90D7;
+ 	accent-color: #3D90D7;
+ 	color: white;
+ 	font-size: 1.1em;
+	font-family: Georgia, serif;
+}
+select{
+	border: solid #C5BAFF 2px;
+	border-radius: 6px;
+	background: linear-gradient(#C5BAFF, #C4D9FF);
+}
