@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/jpg" href="logoproyecto.png">
+	<link rel="stylesheet" type="text/css" href="estilosproyecto.css">
+	<title>Chimichangas del Campestre</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+	<script type="text/javascript" src="formularioProyecto.js"></script>
+</head>
+<body>
+	<!--Menú-->
+	<div id="navbar">
+		<a href="index1.html" class="no-hover">
+			<img src="galeria/logoproyecto.png" class="aimg" >
+		</a>
+		<a href="servicios.html">Servicios</a>
+		<a href="acercaDe.html">Acerca de</a>
+		<a href="contacto.html">Más Promociones</a>
+	</div>
+
+	<!--Dirección y horario-->
+	<div id="textoizquierda">
+		<div class="textizq1">
+			<h3 style="font-size: 200%;">
+					Conoce nuestros horarios 
+			</h3>
+			<br><br>
+			<table>
+				<tr>
+					<th colspan="2">En sucursal</th>
+				</tr>
+				<tr>
+					<th>
+						Martes a viernes
+					</th>
+					<th>
+						9:00 a.m<br>
+						a<br>
+						3:30 p.m
+					</th>
+				</tr>
+				<tr>
+					<th>
+						Sabado y Domingo
+					</th>
+					<th>
+						10:00 a.m<br>
+						a<br>
+						4:00 p.m
+					</th>
+				</tr>
+				<tr>
+					<th colspan="2">
+						En Uber eats y Rappi
+					</th>
+				</tr>
+				<tr>
+					<th>
+						Lunes a domingo 
+					</th>
+					<th>
+						9:00 a.m<br>
+						a<br>
+						10:30 p.m
+					</th>
+				</tr>
+			</table>
+		</div>
+		<div class="textizq1">
+			<h3 style="font-size: 200%;">Nos ubicamos en:</h3>
+			<p>Prol. Albino García 1186, Eucaliptos, 78153 San Luis Potosí, S.L.P.</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14780.282121218757!2d-101.02390819949198!3d22.16138713479716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f379a133ef7%3A0xd7c822ea1035a6f4!2sProl.%20Albino%20Garc%C3%ADa%201186%2C%20Eucaliptos%2C%2078153%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1sen!2smx!4v1746903680522!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<div id="cuerpo">
+		<h2 style="font-size: 250%;">Chimichangas para Eventos: ¡Llevamos el Sabor a Tu Fiesta!</h2>
+		<p>
+			¿Planeas una fiesta, reunión familiar o evento especial? En [Nombre de tu negocio], no solo servimos las chimichangas más crujientes y deliciosas, ¡también las llevamos hasta donde nos necesites!<br>
+			📌 Servicio para Eventos:
+			<ul style="list-style: none;">
+				<li>Catering con chimichangas recién hechas y opciones personalizadas.</li>
+				<li>Combos grupales para bodas, cumpleaños, fiestas corporativas y más.</li>
+				<li>Menús flexibles para adaptarnos a tus gustos y presupuesto.</li>
+			</ul>
+			📢 En esta sección, puedes consultar una cotización sin compromiso y diseñar el paquete ideal para tu evento. ¡Haz de tu celebración un momento inolvidable con el auténtico sabor de nuestras chimichangas!
+		</p>
+	</div>
+	<!--Formulario de cotización-->
+	<form name="formulario">
+		<fieldset>
+			<legend>Cotiza tu evento:</legend>
+			<label for="nombre">Nombre(s):</label><br>
+			<input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario" size="15" maxlength="30" title="Escribe el nombre del usuario nuevo" required><br><br>
+			<label for="correo">Correo:</label><br>
+			<input type="email" name="correo" id="correo" required><br><br>
+			<label for="telefono">Teléfono de contacto:</label><br>
+			<input type="number" name="telefono" id="telefono"></br><br>
+			<label for="tipoEvento">Tipo de evento:</label><br>
+			<select name="tipoEvento" id="tipoEvento" size="1">
+				<option value="1">Bautizo</option>
+				<option value="2">Boda</option>
+				<option value="3" selected>Cumpleaños</option>
+				<option value="4">Empresarial</option>
+			</select>
+			<br><br>
+			<label for="fecha">Fecha del evento:</label><br>
+			<input type="date" name="fecha" id="fecha" required><br/><br>
+			<label for="hora">Hora del evento:</label><br>
+			<input type="time" name="hora" id="hora" required><br/><br>
+			<label for="direccion">Ubicación del evento:</label><br>
+			<input type="text" name="direccion" id="direccion" required><br/><br>
+			<label for="invitados">Número aproximado de invitados:</label><br>
+			<input type="number" name="invitados" id="invitados"></br><br>
+			<label for="tipoServicio">Tipo de servicio:</label><br>
+			<select name="tipoServicio" id="tipoServicio" size="1">
+				<option value="1">Servicio completo (staff, preparación en sitio)</option>
+				<option value="2">Entrega a domicilio</option>
+				<option value="3">Solo recogida</option>
+			</select>
+			<br><br>
+			<input type="button" name="envio" id="envio" value="Obtener cotización" onclick="leer()"></br></br>
+		</fieldset>
+	</form>		
+	<!--Generar el PDF-->
+	<input type="button" name="boton" id="boton" value="Generar PDF" onclick="generar()"></br>
+	<iframe class="cotizacion" src="" frameborder="0" width="500" height="600"></iframe>
+
+	<!--PIE DE PAGINA-->
+	<footer>
+		<a href="">Instragam</a><br>
+		<a href="">Facebook</a> <br>
+		<a href="">Rappi</a> <br>
+		<a href="">Uber Eats</a> <br>
+		Página Web desarrollada para la maetria de Programación Web I. 
+		Primavera 2025. Universidad Politécnica de San Luis Potosí
+	</footer>
+</body>
+</html>
