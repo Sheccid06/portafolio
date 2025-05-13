@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/jpg" href="galeria/logoproyecto.png">
+	<link rel="stylesheet" type="text/css" href="estilosproyecto.css">
+	<title>Chimichangas del Campestre</title>
+
+	<!--CHAT BOT ESTILOS-->
+	<link rel="stylesheet" type="text/css" href="chatbotes.css">
+	<!--FUENTES-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Menú-->
+
+	<div id="navbar">
+		<a class="no-hover">
+			<img src="galeria/logoproyecto.png" class="aimg" >
+		</a>
+		<a href="servicios.html">Servicios</a>
+		<a href="acercaDe.html">Acerca de</a>
+		<a href="contacto.html">Contacto</a>
+		<a href="masPromociones.html">Más Promociones</a>
+		<a href="preguntasFrecuentes.html">Ayuda</a>
+	</div>
+	<!--Título en la página principal
+	<h1>LAS CHIMICHANGAS DEL CAMPESTRE</h1>-->
+
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="galeria/imgC1.jpg" style="width:100%">
+			<!--<div class="text">Caption Text</div>-->
+		</div>
+
+		<div class="mySlides fade">
+		    <div class="numbertext">2 / 3</div>
+		    <img src="galeria/imgC2.jpg" style="width:100%">
+		    <!--<div class="text">Caption Two</div>-->
+		</div>
+
+		<div class="mySlides fade">
+		    <div class="numbertext">3 / 3</div>
+		    <img src="galeria/imgC3.jpg" style="width:100%">
+		    <!--<div class="text">Caption Three</div>-->
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+
+	<!--Link del java-->
+	<script src="proyecto.js" type="text/javascript"></script>
+
+
+	<!--INFORMACIÓN (CUERPO)-->
+
+	<div id="cuerpo">
+		<h2>¡Explora nuestro menú!</h2>
+		<p>
+			Busca nuestras promociones de tomparada para obtener una mejor oferta<br>
+			Explora también nuestras Pizzas<br>
+			Elige entre 10 sabores diferentes de chimichangas
+		</p>
+
+		<a href="servicios.html#menu" class="vermenu">Ver más</a>
+	
+
+		<!--Combos y promociones Flash con botónes-->
+		<div id="textoizquierda">
+			<div class="textizq1">
+				<h3>
+					2 x $80 en chimichangas 
+				</h3>
+				<p>
+					Valido para tu primera compra<br>
+					Promoción por apertura valida hasta 09 Julio 2025<br>
+					Aplica para cualquiera de nuestros 10 sabores a explorar<br>
+				</p>
+			</div>
+			<div class="textizq1">
+				<img src="galeria/PRimg1.jpg">
+			</div>
+		</div>
+
+		<div id="textoizquierda">
+			<div class="textizq1">
+				<img src="galeria/img1.webp">
+			</div>
+			<div class="textizq1">
+				<h3>
+					¡Explora Todos Nuestros Productos! 
+				</h3>
+				<p>
+					Tambien contamos con pizzas hechas en horno de piedra <br>
+					Contamos con 6 diferentes ingredientes para combinar <br>
+					Mezclalos a tú gusto<br>
+					Perfecto para reuniones o fiestas
+				</p>
+			</div>
+		</div>
+		<a href="contacto.html#menu" class="vercontacto">Pide Ahora</a>
+		<br>
+		<br>
+		<h2>
+			Nos ubicamos en:
+		</h2>
+		<p>
+			Prol. Albino García 1186, Eucaliptos, 78153 San Luis Potosí, S.L.P.
+		</p>
+	</div>
+
+	
+
+	<!--MAPA Y VIDEO-->
+	<div id="textoizquierda">
+		<div class="textizq1">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118270.04704888361!2d-101.1342712566406!3d22.128302500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98a29d113f57%3A0xc7de84e0da4a4fa5!2sLA%20CHIMICHANGA%20POTOSINA!5e0!3m2!1sen!2smx!4v1743970872959!5m2!1sen!2smx" width="90%" height="150%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+		</div>
+		<a name="zonas"></a>
+		<div class="textizq1">
+			<video controls>
+				<source src="galeria/video.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<!--CHAT BOT-->
+	<div id="chat-icon" onclick="toggleChatbox()">
+	  <img src="https://img.icons8.com/ios-filled/30/ffffff/chat.png" alt="Chat">
+	</div>
+
+	<div id="chatbox">
+	  <div class="chat-content" id="chat-content">
+	    <p><strong>¡Hola! Soy el asistente virtual de Las Chinichangas del Campestre. ¿Cómo puedo ayudarte hoy?</strong></p>
+	  </div>
+	  <div class="chat-footer" id="chat-footer">
+	    <button onclick="responder('menu')">Ver el menú</button>
+	    <button onclick="responder('pedido')">Hacer un pedido</button>
+	    <button onclick="responder('ofertas')">Conocer nuestras ofertas</button>
+	    <button onclick="responder('ubicacion')">Ubicación y horario</button>
+	    <button onclick="responder('contacto')">Contactar con atención al cliente</button>
+	  </div>
+	</div>
+	<script src="chatbotjava.js" type="text/javascript"></script>
+	<!--PIE DE PAGINA-->
+	<footer>
+		<a href="https://www.instagram.com/las_chimichangas_del_campestre?igsh=bzIzemQ2dWZtZmIx">Instragam</a><br>
+		<a href="">Rappi</a> <br>
+		<a href="https://www.ubereats.com/mx/store/las-chimichangas-del-campestre/rQAH5P_PSuGX-pDL8QNsdA?msockid=3a1b86ece0586f32070393f6e17d6e79">Uber Eats</a> <br>
+		<a>444 312 3616</a> <br>
+		Página Web desarrollada para la maetria de Programación Web I. 
+		Primavera 2025. Universidad Politécnica de San Luis Potosí
+	</footer>
+</body>
+</html>
