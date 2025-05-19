@@ -1,0 +1,48 @@
+h1{
+	font-size: 2.5em;
+	text-align: center;
+	color: #2D336B;
+}
+fieldset{
+	width: 60%;
+	margin: auto;
+	border: solid #2D336B 3px;
+	border-radius: 8px;
+}
+legend{
+	color: #2D336B;
+	font-size: 1.5em;
+}
+label{
+	color: #2D336B;
+	font-size: 100%;
+}
+input[type=button]{
+	width: auto;
+	margin: 0 auto;
+	display: block;
+	border: solid #7886C7 3px;
+	border-radius: 8px;
+	background-color: #7886C7;
+	color: white;
+}
+input[type=number]{
+	width: 99%;
+	border: solid #7886C7 3px;
+	border-radius: 8px;
+	background-color: #A9B5DF;
+}
+select{
+	width: 99%;
+	border: solid #7886C7 3px;
+	border-radius: 8px;
+	background-color: #A9B5DF;
+}
+.mostrar{
+	width: 50%;
+	margin: 0 auto;
+	border: solid #7886C7 3px;
+	border-radius: 8px;
+	background-color: #A9B5DF;
+	text-align: center;
+}

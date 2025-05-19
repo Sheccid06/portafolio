@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="ExamenParcial3.css">
+	<script type="text/javascript" src="ExamenParcial3.js"></script>
+	<title>Evaluación práctica P3 12 a 13</title>
+</head>
+<body>
+	<h1>Pagos de estacionamiento</h1>
+	<form>
+		<fieldset>
+			<legend>
+				Pago de estacionamiento
+			</legend>
+			<label for="horas">Horas usadas en el estacionamiento</label><br>
+			<input type="number" name="horas" id="horas"><br>
+			<label for="auto">Tipos de auto</label><br>
+			<select name="auto" id="auto" size="1">
+				<option value="20">Auto chico</option>
+				<option value="30">Camioneta</option>
+				<option value="40">Camión</option>
+			</select><br><br>
+			<input type="button"  name="envio" id="envio" value="Calcular total a pagar" onclick="leer()"><br>
+		</fieldset>
+	</form>
+	<br><br>
+	<div class="mostrar">
+		<h1>Total a pagar:</h1>
+		<p id="resultado"></p>
+	</div>
+</body>
+</html>
