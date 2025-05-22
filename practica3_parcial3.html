@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos_practica3_parcial3.css">
+	<script type="text/javascript" src="practica3.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+	<title>Práctica 3 Parcial 3</title>
+</head>
+<body>
+	<div class="titulo">
+		<h1>¿Cuánto sabes de caballos?</h1>
+	</div>
+	<form>
+		<fieldset>
+			<legend>Formulario de Diagnóstico de Conocimientos Generales sobre Caballos</legend>
+		<ul>
+			<li>1. ¿Cuál es la temperatura corporal normal de un caballo adulto sano?</li>
+			<input type="radio" name="r1" id="r1" value="0"><label>a) 35.5 – 36.5 °C</label><br>
+			<input type="radio" name="r1" id="r1" value="1"><label>b) 37.5 – 38.5 °C</label><br>
+			<input type="radio" name="r1" id="r1" value="0"><label>c) 39.5 – 40.5 °C</label><br>
+			<input type="radio" name="r1" id="r1" value="0"><label>d) 36.0 – 37.0 °C</label><br>
+			<br>
+			<li>2. ¿Con qué frecuencia se deben desparasitar los caballos en promedio?</li>
+			<input type="radio" name="r2" id="r2" value="0"><label>a) Una vez al año</label><br>
+			<input type="radio" name="r2" id="r2" value="0"><label>b) Cada 6 meses</label><br>
+			<input type="radio" name="r2" id="r2" value="1"><label>c) Cada 2 a 3 meses</label><br>
+			<input type="radio" name="r2" id="r2" value="0"><label>d) Solo si se nota que está enfermo</label><br>
+			<br>
+			<li>3. ¿Qué parte del cuerpo del caballo se revisa comúnmente para determinar su estado de hidratación?</li>
+			<input type="radio" name="r3" id="r3" value="0"><label>a) Los cascos</label><br>
+			<input type="radio" name="r3" id="r3" value="0"><label>b) El lomo</label><br>
+			<input type="radio" name="r3" id="r3" value="1"><label>c) Las encías</label><br>
+			<input type="radio" name="r3" id="r3" value="0"><label>d) La crin</label><br>
+			<br>
+			<li>4. ¿Qué tipo de alimentación es esencial en la dieta de un caballo?</li>
+			<input type="radio" name="r4" id="r4" value="1"><label>a) Forraje (heno o pasto)</label><br>
+			<input type="radio" name="r4" id="r4" value="0"><label>b) Carne molida</label><br>
+			<input type="radio" name="r4" id="r4" value="0"><label>c) Pienso para perros</label><br>
+			<input type="radio" name="r4" id="r4" value="0"><label>d) Pescado y arroz</label><br>
+			<br>
+			<li>5. ¿Cuál es la herramienta más adecuada para limpiar los cascos de un caballo?</li>
+			<input type="radio" name="r5" id="r5" value="0"><label>a) Cepillo de cerdas duras</label><br>
+			<input type="radio" name="r5" id="r5" value="0"><label>b) Tijeras</label><br>
+			<input type="radio" name="r5" id="r5" value="1"><label>c) Limpia cascos o gancho de casco</label><br>
+			<input type="radio" name="r5" id="r5" value="0"><label>d) Peine</label><br>
+			<br>
+			<li>6. ¿Cómo se llama la parte del equipo que va en la boca del caballo para dirigirlo?</li>
+			<input type="radio" name="r6" id="r6" value="0"><label>a) Albardón</label><br>
+			<input type="radio" name="r6" id="r6" value="1"><label>b) Freno o bocado</label><br>
+			<input type="radio" name="r6" id="r6" value="0"><label>c) Estribo</label><br>
+			<input type="radio" name="r6" id="r6" value="0"><label>d) Cincha</label><br>
+			<br>
+			<li>7. ¿Qué indica un caballo que sacude constantemente la cabeza y patea con frecuencia?</li>
+			<input type="radio" name="r7" id="r7" value="0"><label>a) Que está jugando</label><br>
+			<input type="radio" name="r7" id="r7" value="1"><label>b) Que está molesto o siente molestias</label><br>
+			<input type="radio" name="r7" id="r7" value="0"><label>c) Que tiene hambre</label><br>
+			<input type="radio" name="r7" id="r7" value="0"><label>d) Que está cansado</label><br>
+			<br>
+			<li>8. ¿Cada cuánto se recomienda revisar y recortar los cascos de un caballo?</li>
+			<input type="radio" name="r8" id="r8" value="0"><label>a) Cada 12 meses</label><br>
+			<input type="radio" name="r8" id="r8" value="0"><label>b) Solo si se rompen</label><br>
+			<input type="radio" name="r8" id="r8" value="1"><label>c) Cada 6 a 8 semanas</label><br>
+			<input type="radio" name="r8" id="r8" value="0"><label>d) Nunca, se liman solos</label><br>
+			<br>
+			<li>9. ¿Cuál de estas razas es conocida por su velocidad en carreras?</li>
+			<input type="radio" name="r9" id="r9" value="0"><label>a) Frisón</label><br>
+			<input type="radio" name="r9" id="r9" value="1"><label>b) Pura Sangre Inglés (Thoroughbred)</label><br>
+			<input type="radio" name="r9" id="r9" value="0"><label>c) Percherón</label><br>
+			<input type="radio" name="r9" id="r9" value="0"><label>d) Falabella</label><br>
+			<br>
+			<li>10. ¿Cuál es la señal de que un caballo puede estar sufriendo un cólico?</li>
+			<input type="radio" name="r10" id="r10" value="0"><label>a) Menea la cola constantemente</label><br>
+			<input type="radio" name="r10" id="r10" value="0"><label>b) Mastica aire</label><br>
+			<input type="radio" name="r10" id="r10" value="1"><label>c) Se echa y se levanta repetidamente, patea el abdomen</label><br>
+			<input type="radio" name="r10" id="r10" value="0"><label>d) Se queda quieto por muchas horas</label><br>
+		</ul>
+			<input type="button" name="envio" id="envio" value="Enviar formulario" onclick="enviar()"><br><br>
+		</fieldset>
+	</form>
+	<!--muestra su calificación en un div-->
+	<div class="contenedor">
+		<h1>Tu calificación es:</h1>
+		<p id="calificacion"></p>
+	</div>
+
+	<!--genera un gráfico en el cual ilustres los puntos obtenidos por el usuario en cada pregunta-->
+	<!--https://developers.google.com/chart/interactive/docs?hl=es-419-->
+	<div class="grafico-container">
+    	<h2>Desglose por pregunta</h2>
+    	<canvas id="puntajeGrafico"></canvas>
+	</div>
+	
+
+	<!--genera el correspondiente PDF para descarga o impresión-->
+	<div class="contenedor">
+    <input type="button" name="generar" id="generar" value="Generar PDF" onclick="generarPDFenIframe()"><br><br>
+    <iframe id="visorPDF"></iframe>
+	</div>
+</body>
+</html>
